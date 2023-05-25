@@ -1,0 +1,145 @@
+
+.navbar{
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    max-height: 100px;
+    justify-content: space-between;
+    padding: 0 0;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    font-weight: 300;
+    color: #102a42;
+}    
+.logo img{
+    width: 175px;
+}
+
+.links a {
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 1rem;
+    color: #102a42;
+}
+
+.icons{
+    font-size: 1.5rem;
+}
+.icons a{
+    margin-right: 2rem;
+    color: #0f2940;
+   text-decoration: none;
+}
+.icons .cart-count{
+    position: relative;
+}
+.icons span{
+    color: white;
+    font-weight: 500;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    display: flex;
+    font-size: 0.75rem;
+    right: -13px;
+    top: -10px;
+    background-color: #ac7b5f;
+    padding: 5px 5px;
+    border-radius: 50% ;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+}
+.toggle-button{
+    display: none;
+    margin-right: 2rem;
+    color: #a8785d;
+}
+
+
+
+.expanded-menu{
+    padding: 1rem 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+    position: absolute;
+    left: -120%;
+    top: 0;
+    text-align: left;
+    -moz-transition:all 0.4s ease-in;
+    -webkit-transition:all 0.4s ease-in;
+    -o-transition:all 0.4s ease-in;
+    transition:all 0.4s linear;
+}
+.open{
+    left: 0;
+}
+.expanded-menu .close-button{
+    position: absolute;
+    top: 1rem;
+    right:3rem;
+    color: red;
+    font-weight: 500;
+}
+.expanded-menu .logo2 img{
+    width: 175px;
+}
+.expanded-menu .links2{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.expanded-menu .links2 a {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #102a42;
+    padding: 15px 1rem;
+    transition:all 0.3s linear;
+}
+.expanded-menu .links2 a:hover{
+    background-color: #f1f5f8;
+    padding-left: 2rem;
+}
+
+.expanded-menu .icons2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.expanded-menu .icons2 a{
+    margin-right: 2rem;
+    color: #0f2940;
+    text-decoration: none;
+}
+.expanded-menu .icons2 .cart-count{
+    position: relative;
+}
+.expanded-menu .icons2 span{
+    color: white;
+    font-weight: 500;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    display: flex;
+    font-size: 0.75rem;
+    right: -13px;
+    top: -10px;
+    background-color: #ac7b5f;
+    padding: 5px 5px;
+    border-radius: 50% ;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+}
+@media only screen and (max-width: 900px) {
+    .links {
+    display:none;
+    }
+    .icons{
+        display: none;
+    }
+    .toggle-button{
+        display: block;
+    }
+}
