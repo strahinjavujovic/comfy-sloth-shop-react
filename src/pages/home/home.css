@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+.home {
+    font-family: 'Roboto', sans-serif;
+}
+
+.first-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    padding: 4rem 2rem;
+}
+
+.first-content .info {
+
+    width: 50%;
+    text-align: left;
+    padding: 1rem 0;
+}
+
+.first-content .info h1 {
+
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-transform: capitalize;
+    width: 60%;
+}
+
+.first-content .info p {
+
+    line-height: 2;
+    font-size: 1.25rem;
+    color: #617d98;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.first-content .info button {
+
+    padding: 0.75rem 1.5rem;
+    background-color: #ac7b5f;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+
+.first-content .info button:hover {
+
+    color: #453227;
+    background-color: #c5a491;
+}
+.first-content .pictures {
+
+    width: 50%;
+    position: relative;
+    text-align: right;
+    height: 550px;
+    
+}
+
+.first-content .pictures .empty-div {
+
+    height: 440px;
+    width: 44px;
+    background-color: #decbc0;
+    position: absolute;
+    bottom: 0;
+    left: 13%;
+    z-index: 1;
+    border-radius: 0.25rem;
+}
+.first-content .pictures img {
+
+    height: 100% ;
+    width: 80%;
+
+}
+
+.first-content .pictures .bigger-pic {
+    position: relative;
+   z-index: 2;
+}
+.first-content .smaller-pic {
+
+    position: absolute;
+    width: 250px !important;
+    height: 165px !important;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 980px) {
+   
+    .first-content {
+        padding: 2rem 2rem ;
+    }
+
+    .first-content .info {
+
+        padding: 0 0;
+        width: 100%;
+    }
+
+    .first-content .info h1 {
+
+        font-size: 2.5rem;
+        width: 80% ;
+    }
+
+    .pictures {
+
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+   
+    .first-content {
+        padding: 2rem 2rem ;
+    }
+
+    .first-content .info {
+
+        padding: 0 0;
+        width: 100%;
+    }
+
+    .first-content .info h1 {
+
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    .first-content .info p {
+
+        font-size: 1rem;
+       
+    }
+    .first-content .info button {
+
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
+    }
+
+    .pictures {
+
+        display: none;
+    }
+}
+
+.back-color {
+    max-width: 100%;
+    background-color: #f1f5f8;
+    padding: 0;
+}
+.second-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-transform: capitalize;
+    padding: 4rem 2rem;
+   
+}
+.second-content .title {
+
+    position: relative;
+    height: 60px;
+    margin-bottom: 3rem;
+}
+.second-content h1 {
+
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.75rem ;
+   
+}
+
+.second-content .underline{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    margin-left: auto; 
+    margin-right: auto;
+    height: 0.25rem;
+    width: 6rem;
+    background-color: #ab7a5f;
+}
+
+.second-content .articles {
+    display: flex;
+    margin: 2rem auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.second-content button {
+
+    padding: 0.375rem .75rem;
+    background-color: #ac7b5f;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    font-size: .875rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+
+.second-content button:hover {
+
+    color: #453227;
+    background-color: #c5a491;
+}
+@media only screen and (max-width: 450px) {
+    
+    .second-content h1 {
+
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .second-content .title {
+        
+        height: 45px;
+    }
+}

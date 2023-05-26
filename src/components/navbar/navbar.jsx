@@ -5,10 +5,11 @@ import { List } from "phosphor-react";
 import { ShoppingCart } from "phosphor-react";
 import { UserPlus } from "phosphor-react";
 import { X } from "phosphor-react";
-import logo from '../assets/logo.jpg';
+import logo from '../../assets/logo.jpg';
+import useLockScroll from '../../myHooks/useLockScroll';
  const Navbar=()=>{
     const [showMenu,setShowmenu]=useState(false);
-    //<List size={32}/>
+    const { lockScroll, unlockScroll } = useLockScroll();
     return(
         <div className="navbar">
             <div className="logo"> 
@@ -20,16 +21,16 @@ import logo from '../assets/logo.jpg';
                 <Link to='/products'>Products</Link>
             </div>
             <div className="icons">
-                <Link className="cart-count">Cart <ShoppingCart size={23}/>
+                <Link className="cart-count">Cart <ShoppingCart className="line" size={23}/>
                 <span>0</span>
                 </Link>
-                <Link>Login <UserPlus size={23}/> </Link>
+                <Link>Login <UserPlus className="line" size={23}/> </Link>
             </div>
-            <Link className="toggle-button" onClick={()=>setShowmenu(!showMenu)}><List  size={35} weight="bold"/></Link>
+            <Link className="toggle-button" onClick={event=>{setShowmenu(!showMenu);lockScroll()}}><List  size={35} weight="bold"/></Link>
         
         <div className={showMenu ? "expanded-menu open" : "expanded-menu"}>
             <div>
-                <Link className="close-button"><X  size={32} weight="bold" onClick={()=>setShowmenu(!showMenu)}></X></Link>
+                <Link className="close-button"><X  size={32} weight="bold" onClick={event=>{setShowmenu(!showMenu);unlockScroll()}}></X></Link>
             </div>
             <div className="logo2">
                  <img src={logo}/>
@@ -40,10 +41,10 @@ import logo from '../assets/logo.jpg';
                 <Link to='/products' onClick={()=>setShowmenu(false)}>Products</Link>
             </div>
             <div className="icons2">
-                <Link className="cart-count">Cart <ShoppingCart size={23}/>
+                <Link className="cart-count">Cart <ShoppingCart className="line" size={23}/>
                 <span>0</span>
                 </Link>
-                <Link>Login <UserPlus size={23}/> </Link>
+                <Link>Login <UserPlus className="line" size={23}/> </Link>
             </div>
         </div>
 
