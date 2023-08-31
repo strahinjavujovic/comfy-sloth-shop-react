@@ -1,0 +1,86 @@
+.item {
+
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.item div {
+
+    width: 300px;
+}
+.image-name-color .image {
+
+    min-width: 100px !important;
+    height: 75px ;
+    border-radius: 0.25rem;
+}
+.image img {
+
+    width: 100% ;
+    height: 100% ;
+    border-radius: 0.25rem;
+}
+
+.item .image-name-color {
+
+    display: flex;
+}
+
+.image-name-color .name-color {
+
+    display: block;
+    text-align: left;
+    padding-left: 1rem;
+    width: 200px;
+    text-transform: capitalize;
+}
+
+.color-paragraph {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+.image-name-color .name-color .color-div{
+
+    width: 12px !important;
+    height: 12px !important;
+    margin-left: 6px;
+    border-radius: 0.25rem;
+}
+
+.item .item-quantity {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.item .item-quantity p {
+
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+.item .item-quantity svg{
+
+    color: #102a42;
+    
+}
+
+.item .item-quantity svg:hover {
+
+    cursor: pointer;
+}
+.item-button-delete {
+
+    width: 30px !important;
+}
+
+.item-button-delete svg:hover{
+
+    cursor: pointer;
+}

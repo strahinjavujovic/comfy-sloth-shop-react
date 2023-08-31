@@ -1,0 +1,133 @@
+.filter {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 2rem 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.articless {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.articless .article {
+
+    width: 300px;
+    height: 215px;
+    margin: 1rem 1rem;
+}
+
+.articless .article .image {
+
+    margin: 0 0;
+    height: 175px !important;
+}
+
+.articless .article img {
+
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.articless .article .hover-search {
+
+    height: 175px;
+}
+
+.articless .article .info {
+
+    margin:0 auto;
+}
+
+.catalog {
+
+    width: 100%;
+}
+
+.one-by-one {
+    width: 100%;
+    display: block;
+}
+
+.one-by-one .article {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0;
+    height: 230px;
+}
+
+.one-by-one .article .image {
+
+    width: 300px !important;
+    height: 200px !important;
+}
+
+.one-by-one .article .info {
+
+    margin: 0 0;
+    display: block;
+    text-align: left;
+    width: 65%;
+}
+
+.one-by-one .article .info .price{
+
+    text-align: left !important;
+}
+
+.one-by-one .article .info .article-about {
+
+    max-width: 45rem;
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.one-by-one .article .hover-search {
+
+    display: none;
+}
+
+.one-by-one .article .info .onebyone {
+
+    display: block;
+}
+
+.in-row {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.in-row .article {
+
+    max-width: 300px;
+    height: 215px;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.in-row .article .image {
+
+    width: 300px !important;
+    height: 175px !important;
+}
+
+.in-row .article .hover-search {
+
+    height: 175px;
+}
+
+.in-row .article .info .onebyone {
+
+    display: none;
+}

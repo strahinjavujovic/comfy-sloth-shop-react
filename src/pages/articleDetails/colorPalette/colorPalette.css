@@ -1,0 +1,10 @@
+.colorPalette {
+
+    display: flex;
+    margin-left: 2rem;
+}
+
+.activeColor {
+
+    visibility: visible !important;
+}

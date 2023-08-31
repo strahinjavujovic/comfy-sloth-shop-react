@@ -1,0 +1,33 @@
+.sortBy {
+     display: flex;
+     height: 30px;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 2rem;
+     font-family: 'Roboto', sans-serif;
+}
+
+.sortBy svg {
+
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+   
+}
+
+.sortBy hr {
+
+    width: 50%;
+}
+
+.sortBy .displayActive {
+
+    color: #000 !important;
+    pointer-events:none;
+}
+
+.displayNotActive {
+
+    color: #aaa;
+     pointer-events:auto;
+}

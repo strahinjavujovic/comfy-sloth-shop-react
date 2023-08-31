@@ -1,0 +1,192 @@
+.selectedPage {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eaded7;
+    width: 100%;
+    text-align: left;
+    font-size: 2rem;
+    color: #795744;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    
+}
+
+.selectedPage .contents {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.selectedPage a {
+
+    text-decoration: none;
+    color: #795744;
+}
+
+.selectedPage p {
+
+    color: #453227;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 450px) {
+    
+    .selectedPage{
+        font-size: 1.3rem;
+        padding: 0 1rem;
+    }
+}
+
+.articleDetails .container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    padding: 4rem 0;
+}
+
+.articleDetails .container .button {
+
+    margin-bottom: 2rem;
+   
+}
+
+.articleDetails .container a {
+    text-decoration: none;
+    padding: .375rem .75rem;
+    background-color: #ac7b5f;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    font-size: .875rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+
+.articleDetails .container a:hover {
+
+    color: #453227;
+    background-color: #c5a491;
+}
+.articleDetails .content {
+
+    display: flex;
+}
+
+.articleDetails .content div {
+
+    width: 50%;
+    
+}
+
+.articleDetails .pictures .displayedPic {
+
+    height: 500px;
+    width: 100%;
+    border-radius: 0.25rem;
+}
+
+.articleDetails .pictures {
+
+    margin-right: 2rem;
+}
+.articleDetails .pictures .gallery {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+}
+.articleDetails .pictures .gallery img {
+
+    width: 100px !important;
+    height: 75px;
+    margin-right: 0.3rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.articleDetails .info {
+
+    text-align: left;
+}
+
+.articleDetails .info p {
+
+    color: #324d67;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+
+}
+
+.articleDetails .info h2 {
+
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2.5rem;
+}
+
+.articleDetails .info .price {
+
+    color: #ab7a5f;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.articleDetails .info .about-product {
+
+    line-height: 2;
+    max-width: 45em;
+    color: #324d67;
+    font-size: 1rem;
+}
+
+.articleDetails .info span {
+
+    
+    width: 125px;
+    font-weight: 500;
+}
+
+
+.articleDetails .info .brand {
+
+    text-transform: capitalize;
+}
+
+.articleDetails hr {
+
+    color: #324d67;
+    font-weight: 100;
+    
+}
+
+.articleDetails .info .buttons-to-add {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    height: 100px;
+   
+}
+
+.articleDetails .info .buttons-to-add p {
+
+    font-weight: bold;
+}
+.articleDetails .info .buttons-to-add svg {
+
+    margin: 0 20px;
+}
+
+.articleDetails .info .buttons-to-add svg:hover {
+
+    cursor: pointer;
+    
+}

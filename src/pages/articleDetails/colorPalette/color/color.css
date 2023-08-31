@@ -1,0 +1,27 @@
+.color {
+
+    width: 24px !important;
+    margin-right: 5px;
+}
+.color button {
+    
+    letter-spacing: 0.1rem;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.color button svg {
+    color: #fff;
+    margin-left: -2px;
+    visibility: hidden;
+}
+
+.color .activeColor {
+
+    visibility: visible !important;
+}

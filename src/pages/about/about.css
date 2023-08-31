@@ -1,0 +1,53 @@
+.about-page {
+
+    min-height: 90vh;
+}
+
+.about {
+
+    font-family: 'Roboto', sans-serif;
+    max-width: 1100px;
+    display: flex;
+    margin: 0 auto;
+    padding:5rem 0;
+}
+
+.about div {
+
+    width: 50%;
+    text-align: left;
+}
+
+.about img {
+
+    height: 500px;
+}
+
+.about .info {
+
+    padding: 0 2rem;
+}
+.about .info h2{
+
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin:0;
+}
+
+.about .info hr {
+
+    width: 6rem;
+    margin: 0;
+    height: 4px;
+    background-color: #ab7a5f;
+    border: none;
+}
+
+.about .info p {
+
+    font-size: 1rem;
+    max-width: 45rem;
+    line-height: 2;
+    color: #617d98;
+    font-weight: 300;
+}

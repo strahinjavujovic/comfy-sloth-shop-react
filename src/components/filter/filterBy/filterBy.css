@@ -1,0 +1,124 @@
+.filterby {
+
+    width: 225px;
+    padding: 0 1rem;
+    text-align: left;
+    letter-spacing: 0.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.filterby h5 {
+
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin:  0.7rem 0;
+    
+}
+
+.filterby div {
+    margin-bottom: 1.5rem;
+}
+.filterby button {
+
+    color: #617d98;
+}
+#inputName {
+
+    padding: 0.5rem;
+    background-color: #f1f5f8;
+    border: none;
+    border-radius: 5%;
+    letter-spacing: 0.1rem;
+    width: 90%;
+}
+.category button{
+
+    height: 22px;
+    display: block;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.active {
+
+    border-bottom: 1px solid #617d98 !important;
+}
+
+#companies {
+
+    background-color: #f1f5f8;
+    border: none;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+.colors{
+
+    display: flex;
+   align-items: center;
+   height: 25px;
+   box-sizing: border-box;
+}
+
+.colors button {
+    
+    letter-spacing: 0.1rem;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.colors button svg {
+    color: #fff;
+    margin-left: -2px;
+    visibility: hidden;
+}
+.colors .all  {
+  
+    width: 30px !important;
+    background-color: #fff;
+    border-radius: 0%;
+    padding: 0.25rem 0px;
+    height: 23px;
+}
+
+.colors .all button {
+
+    padding-bottom: 2px;
+}
+.activeColor {
+
+    visibility: visible !important;
+}
+
+.price p {
+
+    margin: 0;
+}
+.shipping {
+
+    margin: 0.7rem 0;
+    letter-spacing: 0;
+    
+}
+
+.shipping label {
+
+    margin-right: 1.5rem;
+}
+
+.button-clear button{
+
+    color: #fff;
+    background-color: #bb2525;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}

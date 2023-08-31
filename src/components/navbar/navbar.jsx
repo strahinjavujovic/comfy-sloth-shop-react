@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,useContext} from "react";
 import  './navbar.css'
 import { Link } from "react-router-dom";
 import { List } from "phosphor-react";
@@ -7,13 +7,17 @@ import { UserPlus } from "phosphor-react";
 import { X } from "phosphor-react";
 import logo from '../../assets/logo.jpg';
 import useLockScroll from '../../myHooks/useLockScroll';
+import { ShopContext } from "../../context/cart-context";
+
+
  const Navbar=()=>{
     const [showMenu,setShowmenu]=useState(false);
     const { lockScroll, unlockScroll } = useLockScroll();
+    const {  itemsInCart } = useContext(ShopContext);
     return(
         <div className="navbar">
             <div className="logo"> 
-                <img src={logo}/>
+                <img src={logo} alt="test"/>
             </div>
             <div  className="links">
                 <Link to='/'>Home</Link>
@@ -21,8 +25,8 @@ import useLockScroll from '../../myHooks/useLockScroll';
                 <Link to='/products'>Products</Link>
             </div>
             <div className="icons">
-                <Link className="cart-count">Cart <ShoppingCart className="line" size={23}/>
-                <span>0</span>
+                <Link className="cart-count" to='/cart'>Cart <ShoppingCart className="line" size={23}/>
+                <span>{itemsInCart}</span>
                 </Link>
                 <Link>Login <UserPlus className="line" size={23}/> </Link>
             </div>
@@ -33,16 +37,16 @@ import useLockScroll from '../../myHooks/useLockScroll';
                 <Link className="close-button"><X  size={32} weight="bold" onClick={event=>{setShowmenu(!showMenu);unlockScroll()}}></X></Link>
             </div>
             <div className="logo2">
-                 <img src={logo}/>
+                 <img src={logo} alt="test"/>
             </div>
             <div className="links2">
-                <Link to='/' onClick={()=>setShowmenu(false)}>Home</Link>
-                <Link to='/about' onClick={()=>setShowmenu(false)}>About</Link>
-                <Link to='/products' onClick={()=>setShowmenu(false)}>Products</Link>
+                <Link to='/' onClick={event=>{setShowmenu(false);unlockScroll()}}>Home</Link>
+                <Link to='/about' onClick={event=>{setShowmenu(false);unlockScroll()}}>About</Link>
+                <Link to='/products' onClick={event=>{setShowmenu(false);unlockScroll()}}>Products</Link>
             </div>
             <div className="icons2">
                 <Link className="cart-count">Cart <ShoppingCart className="line" size={23}/>
-                <span>0</span>
+                <span>{itemsInCart}</span>
                 </Link>
                 <Link>Login <UserPlus className="line" size={23}/> </Link>
             </div>
